@@ -1,5 +1,13 @@
-from django.shortcuts import render
+from django.views import generic
+from . import models
 
 
-def home_page(request):
-    return render(request, 'blog/home.html')
+class BlogIndex(generic.ListView):
+    queryset = models.Entry.objects.published()
+    template_name = "blog/home.html"
+    paginate_by = 2
+
+
+class BlogDetail(generic.DetailView):
+    model = models.Entry
+    template_name = "blog/post.html"
