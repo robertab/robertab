@@ -4,13 +4,14 @@
 {% block blog_entries %}
 {% for object in object_list %}
 <div class="post" id="post">
+  <h1>
+    {{object.title }}
+  </h1>
   <p class="created">
-    {{ object.created }}<!--  | -->
-    <!-- Tagged under {{  object.tags.all|join:", " }} -->
+    {{ object.created }}
   </p>
-  <h1><a class="blog-title"href="{% url "entry_detail" slug=object.slug %}">{{ object.title }}</a></h1>
-
   {{ object.body|markdown }}
+  <a class="blog-title"href="{% url "entry_detail" slug=object.slug %}">Read more...</a>
 </div>
 {% endfor %}
 {% endblock %}

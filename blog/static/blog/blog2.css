@@ -1,0 +1,116 @@
+/* 
+Color scheme design for
+the blog.
+
+   #525564 
+   #74828F 
+   #96C0CE 
+   #BEB9B5 
+   #C25B56 
+   #FEF6EB
+
+PALE GOLD: #c0b283
+SILK     : #dcd0c0
+PAPER    : #f4f4f4
+CHARCOAL : #373737
+ */
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700';
+
+body {
+    color: #555;
+    font-family: "Open Sans", "Arial", sans-serif;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+strong {
+    color: #333;
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+a {
+    color: #96c0ce;
+}
+
+
+
+
+header {
+    background-color: #f4f4f4;
+    background-image: url('img/header3.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-transform: uppercase;
+    max-width: none;
+    line-height: 1.2;
+    padding: 10vw 2em;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 2.5em;
+    font-weight: 400;
+}
+
+header a {
+    text-decoration: none;
+    border: solid 1px #96c0ce;
+    border-radius: 10px;
+    font-size: 0.6em;
+    letter-spacing: 0.2em;
+    padding: 1em 2em;
+    color: white;
+    font-size: 1em;
+    font-weight: 400;
+    transition: none 200ms ease-out;
+    transition-property: color, background;
+}
+
+header a:hover {
+    background: #96c0ce;
+    color: white;
+}
+
+article {
+    margin: 0 auto;
+    max-width: 50em;
+}
+
+.post {
+    -o-text-overflow: ellipsis;   /* Opera */
+    text-overflow:    ellipsis;   /* IE, Safari (WebKit) */
+    overflow: hidden;              /* don't show excess chars */
+    white-space: nowrap;           /* force single line */
+    width: 50em; 
+}
+
+article footer {
+    padding: 4em 2em;
+    text-align: center;
+}
+
+article footer a {
+    text-decoration: none;
+    color: #96c0ce;
+    border: solid 1px #d8dee9;
+    border-radius: 10px;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    transition: none 200ms ease-out;
+    transition-property: color, background;
+}
+
+article footer a:hover {
+    background: #96c0ce;
+    color: white;
+}
+
+
+
+

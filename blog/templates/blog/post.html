@@ -3,8 +3,8 @@
 
 {% block blog_entries %}
 <div class="blog-post">
-  <h1><a href="{% url "entry_detail" slug=object.slug %}">{{ object.title }}</a></h1>
-  <p>
+  <h1> {{ object.title }} </h1>
+  <p class="created">
     {{ object.created }} |
     Tagged under {{  object.tags.all|join:", " }}
   </p>

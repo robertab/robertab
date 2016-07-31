@@ -39,8 +39,80 @@ header {
     padding: 0px;
 }
 
+
+
+#toggle-post span {
+    padding: 40px;
+
+    position: absolute;
+    bottom: 10%;
+    left: 47.56%;
+}
+
+#toggle-post span:before,
+#toggle-post span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 50px;
+    background: #c0b283;
+    position: absolute;
+    display: block;
+    content: "";
+}
+
+#toggle-post span:before {
+    transform: rotate(-45deg);
+    left: 31.8px;
+}
+
+#toggle-post span:after {
+    transform: rotate(45deg);
+    right: 31.8px;
+
+}
+
+#toggle-post span:hover:before,
+#toggle-post span:hover:after {
+    transition: all 500ms ease-in-out;
+    background-color: #f4f4f4;
+}
+
+
+
+#toggle-nav span {
+    position: absolute;
+    right: 5%;
+    top: 7%;
+}
+
+#toggle-nav span,
+#toggle-nav span:before,
+#toggle-nav span:after {
+    curstor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 50px;
+    background: #373737;
+    position: absolute;
+    display: block;
+    content: "";
+}
+
+#toggle-nav span:before {
+    top: -10px;
+}
+
+#toggle-nav span:after {
+    bottom: -10px;
+}
+
+
+
+
 footer {
     background-image: url('277H.jpg');
+    background-position: center top;
     align-items: center;
     display: flex;
     flex-direction: rows;
@@ -49,6 +121,11 @@ footer {
     justify-content: center;
     height: 100px;
 }
+
+
+
+
+
 
 .mail {
     margin: 0px 10px 0px 0px;
@@ -72,55 +149,6 @@ footer {
     padding-bottom: 2%;
     border-bottom: solid 5px #c0b283;
 }
-
-nav {
-    position: absolute;
-    right: 2%;
-    top: 2%;
-}
-
-.item1, .item2, .item3 {
-    color: #c0b283;
-    border-bottom: solid 5px;
-    padding: 3px 20px 5px 40px;
-    display: block;
-}
-
-
-
-
-.show-content {
-    position: absolute;
-    bottom: 3%;
-    left: 48.5%;
-    padding: 25px 21px;
-}
-
-.show-content:hover {
-    bottom: 3.5%;
-}
-
-.arrow1 {
-    position: absolute;
-    left: 1px;
-    bottom: 3%;
-    height: 50px;
-    transform: rotate(-45deg);
-    padding: 2px;
-    background-color: #c0b283;
-}
-
-.arrow2 {
-    position: absolute;
-    right: 1px;
-    bottom: 3%;
-    height: 50px;
-    transform: rotate(45deg);
-    padding: 2px;
-    background-color: #c0b283;
-}
-
-
 
 article {
     background-color: #f4f4f4;

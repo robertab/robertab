@@ -4,53 +4,35 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="/feed/" rel="alternate" type="application/rss+xml" title="blog feed" />
     <title>robertab</title>
+    <link href="{% static "blog/blog2.css" %}" rel="stylesheet">
 
-    <link href="{% static "blog/blog.css" %}" rel="stylesheet">
-    
   </head>
   <body>
     <header>
-      <nav>
-	<a class="navbar" href="#">
-	  <span class="item1"></span>
-	  <span class="item2"></span>
-	  <span class="item3"></span>
-	</a>
-      </nav>
-      <h1 class="logo-top"> robertab </h1>
-      <h2 class="logo-bottom"> Student // Developer </h2>
-      <a class="show-content" href="#post">
-	<span class="arrow1"></span>
-	<span class="arrow2"></span>
-      </a>
-	
+      <h1>robertab</h1>
+      <p>
+        <a href="http://www.github.com/robertab">developer >> student</a>
+      </p>
     </header>
-
-
     <article>
-    {% block blog_entries %}
+      {% block blog_entries %}
+      {% endblock %}
 
-    {% endblock %}
-    {% if is_paginated %}
-    <ul>
-      <li {% if not page_obj.has_previous %}class="disabled"{% endif %}>
-    	<a {% if page_obj.has_previous %}href="?page={{ page_obj.previous_page_number }}"{% endif %}>Prev</a></li>
-      <li {% if not page_obj.has_next %}class="disabled"{% endif %}>
-    	<a {% if page_obj.has_next %}href="?page={{ page_obj.next_page_number }}"{% endif %}>Next</a></li>
-    </ul>
-    {% endif %}
+      {% if is_paginated %}
+      <ul>
+	<li {% if not page_obj.has_previous %}class="disabled"{% endif %}>
+    	  <a {% if page_obj.has_previous %}href="?page={{ page_obj.previous_page_number }}"{% endif %}>Prev</a></li>
+	<li {% if not page_obj.has_next %}class="disabled"{% endif %}>
+    	  <a {% if page_obj.has_next %}href="?page={{ page_obj.next_page_number }}"{% endif %}>Next</a></li>
+      </ul>
+      {% endif %}
+
+      <footer>
+        <a href="mailto:robertab@kth.se">email</a> 
+      </footer>
+
     </article>
-    <footer>
-      <a class="mail" href="#"><strong>EMAIL</strong></a>
-      <a class="git" href="http://www.github.com/robertab"><strong>GITHUB</strong></a>
-    </footer>
 
-    <!-- END BLOG POSTS -->
-
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
-    <!-- <script src="{% static "blog/bootstrap/js/bootstrap.min.js" %}"></script> -->
-    <!-- <script src="{% static "blog/bootstrap/js/docs.min.js" %}"></script> -->
   </body>
 </html>

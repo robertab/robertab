@@ -1,3 +1,4 @@
+#! /usr/bin/env python
 from django.views import generic
 from . import models
 
