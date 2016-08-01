@@ -99,6 +99,10 @@ article footer {
     text-align: center;
 }
 
+.created {
+    font-style: italic;
+}
+
 article footer a {
     text-decoration: none;
     color: #96c0ce;
