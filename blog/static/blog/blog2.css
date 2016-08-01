@@ -58,6 +58,10 @@ header h1 {
     font-weight: 400;
 }
 
+header p {
+    
+}
+
 header a {
     text-decoration: none;
     border: solid 1px #96c0ce;
@@ -66,7 +70,6 @@ header a {
     letter-spacing: 0.2em;
     padding: 1em 2em;
     color: white;
-    font-size: 1em;
     font-weight: 400;
     transition: none 200ms ease-out;
     transition-property: color, background;
