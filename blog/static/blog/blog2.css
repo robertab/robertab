@@ -103,6 +103,10 @@ article footer {
     font-style: italic;
 }
 
+.blog-post {
+    margin-left: 15px;
+}
+
 article footer a {
     text-decoration: none;
     color: #96c0ce;
