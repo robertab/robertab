@@ -9,8 +9,20 @@
     <title>robertab</title>
 
     <link href="{% static "blog/blog.css" %}" rel="stylesheet">
+
+
+
   </head>
   <body>
+    <header>
+      <nav>
+	<a id="toggle-nav" href="#"><span></span></a>
+      </nav>
+      <h1 class="logo-top"> robertab </h1>
+      <h2 class="logo-bottom"> Student // Developer </h2>
+      <a id="toggle-post" href="#post"><span></span></a>
+    </header>
+
     <article>
       {% block blog_entries %}
       {% endblock %}
@@ -25,5 +37,14 @@
       {% endif %}
 
     </article>
+    <footer>
+      <a class="mail" href="#"><strong>EMAIL</strong></a>
+      <a class="git" href="http://www.github.com/robertab"><strong>GITHUB</strong></a>
+    </footer>
+    <!-- END BLOG POSTS -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- <script src="{% static "blog/bootstrap/js/bootstrap.min.js" %}"></script> -->
+    <!-- <script src="{% static "blog/bootstrap/js/docs.min.js" %}"></script> -->
   </body>
 </html>
