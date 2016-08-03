@@ -39,6 +39,10 @@ header {
     padding: 0px;
 }
 
+pre {
+    border-top: 2px solid black;
+}
+
 
 
 #toggle-post span {
