@@ -1,7 +1,11 @@
 __init__.py
 *.pyc
-__init__.py
 db.sqlite3
 *.py~
 *.html~
 *.*~
+#blog.css#
+.#blog.css#
+.gitignore
+blog/static/blog/#blog.css#
+blog/static/blog/.#blog.css
